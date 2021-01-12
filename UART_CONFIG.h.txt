@@ -1,0 +1,18 @@
+/*
+ * UART_CONFIG.h
+ 
+ */ 
+
+
+#ifndef UART_CONFIG_H_
+#define UART_CONFIG_H_
+
+#include "CPU_CONFIGURATION.h"
+
+#define BAUD 9600
+#define Fosc 8000000UL
+
+#define UBRR_VALUE  (((Fosc)/(16UL*BAUD)) - 1)
+
+
+#endif /* UART_CONFIG_H_ */
